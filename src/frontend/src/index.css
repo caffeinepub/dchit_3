@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.625rem;
+
+    /* DChit brand tokens */
+    --navy: 0.19 0.057 250;
+    --navy-light: 0.26 0.048 250;
+    --green: 0.6 0.136 155;
+    --green-light: 0.94 0.04 155;
+    --gold: 0.73 0.097 78;
+    --gold-light: 0.96 0.025 78;
+
+    /* Semantic tokens — light mode */
+    --background: 0.97 0.006 243;
+    --foreground: 0.18 0.018 264;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.018 264;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.018 264;
+    --primary: 0.6 0.136 155;
+    --primary-foreground: 1 0 0;
+    --secondary: 0.96 0.008 245;
+    --secondary-foreground: 0.19 0.057 250;
+    --muted: 0.94 0.007 245;
+    --muted-foreground: 0.52 0.012 258;
+    --accent: 0.94 0.015 155;
+    --accent-foreground: 0.42 0.1 155;
+    --destructive: 0.55 0.2 25;
+    --destructive-foreground: 1 0 0;
+    --border: 0.9 0.007 245;
+    --input: 0.9 0.007 245;
+    --ring: 0.6 0.136 155;
+    --chart-1: 0.6 0.136 155;
+    --chart-2: 0.73 0.097 78;
+    --chart-3: 0.19 0.057 250;
+    --chart-4: 0.55 0.2 25;
+    --chart-5: 0.65 0.12 220;
+    --sidebar: 0.97 0.006 243;
+    --sidebar-foreground: 0.18 0.018 264;
+    --sidebar-primary: 0.6 0.136 155;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.94 0.015 155;
+    --sidebar-accent-foreground: 0.42 0.1 155;
+    --sidebar-border: 0.9 0.007 245;
+    --sidebar-ring: 0.6 0.136 155;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
